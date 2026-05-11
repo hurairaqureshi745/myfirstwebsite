@@ -1,0 +1,59 @@
+﻿fantastic deep dive into DOM manipulation, CSS Grid/Flexbox, and creating a dynamic user experience without any external libraries.
+🔗 See it live here:
+ https://lnkd.in/dRv_Bw2N
+📂 Explore the code on GitHub: 
+https://lnkd.in/dgDwRqjf
+
+#HTML #CSS #JavaScript #WebDevelopment #Frontend #Dashboard #VanillaJS #GitHub #PortfolioProject #Coding | 38 comments on LinkedIn">
+  <meta name="twitter:description" content="🚀 Just launched a clean and functional Admin Dashboard built with pure HTML, CSS, and JavaScript!
+I'm thrilled to share my latest front-end project that demonstrates core web development skills. This dashboard features:
+✅ Fully Responsive Layout: Adapts seamlessly to desktop, tablet, and mobile screens.
+✅ Dynamic Data Visualization: Interactive charts and graphs using JavaScript.
+✅ Modern UI Components: A clean sidebar, user profile section, and data tables styled from scratch with CSS.
+✅ No Frameworks: Built to strengthen my foundational understanding of vanilla JS and CSS.
+This project was a fantastic deep dive into DOM manipulation, CSS Grid/Flexbox, and creating a dynamic user experience without any external libraries.
+🔗 See it live here:
+ https://lnkd.in/dRv_Bw2N
+📂 Explore the code on GitHub: 
+https://lnkd.in/dgDwRqjf
+
+#HTML #CSS #JavaScript #WebDevelopment #Frontend #Dashboard #VanillaJS #GitHub #PortfolioProject #Coding | 38 comments on LinkedIn">
+  <meta property="og:description" content="🚀 Just launched a clean and functional Admin Dashboard built with pure HTML, CSS, and JavaScript!
+I'm thrilled to share my latest front-end project that demonstrates core web development skills. This dashboard features:
+✅ Fully Responsive Layout: Adapts seamlessly to desktop, tablet, and mobile screens.
+✅ Dynamic Data Visualization: Interactive charts and graphs using JavaScript.
+✅ Modern UI Components: A clean sidebar, user profile section, and data tables styled from scratch with CSS.
+✅ No Frameworks: Built to strengthen my foundational understanding of vanilla JS and CSS.
+This project was a fantastic deep dive into DOM manipulation, CSS Grid/Flexbox, and creating a dynamic user experience without any external libraries.
+🔗 See it live here:
+ https://lnkd.in/dRv_Bw2N
+📂 Explore the code on GitHub: 
+https://lnkd.in/dgDwRqjf
+
+#HTML #CSS #JavaScript #WebDevelopment #Frontend #Dashboard #VanillaJS #GitHub #PortfolioProject #Coding | 38 comments on LinkedIn">
+
+
+    <meta property="og:title" content="Launched Admin Dashboard with HTML, CSS, and JavaScript | Rabia Ali posted on the topic | LinkedIn">
+    <meta name="twitter:title" content="Launched Admin Dashboard with HTML, CSS, and JavaScript | Rabia Ali posted on the topic | LinkedIn">
+    <title>Launched Admin Dashboard with HTML, CSS, and JavaScript | Rabia Ali posted on the topic | LinkedIn</title>
+
+      <meta name="twitter:card" content="summary_large_image">
+
+    <meta property="lnkd:url" content="https://www.linkedin.com/feed/update/urn:li:activity:7372559461875363840">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.linkedin.com/posts/rabia-ali-218016287_html-css-javascript-activity-7372559461875363840-N9nE">
+    <meta property="og:site_name" content="LinkedIn">
+      <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://dms.licdn.com/playlist/vid/v2/D4D05AQHUyrvgUlR-KA/thumbnail-with-play-button-overlay-high/B4DZlCXqu5JADg-/0/1757755147368?e=2147483647&amp;v=beta&amp;t=wbksM9kzG_2WM6p6-a7V4ZLfZmo4IjfAuZN5G0xCg8w">
+    <meta name="twitter:image" content="https://dms.licdn.com/playlist/vid/v2/D4D05AQHUyrvgUlR-KA/thumbnail-with-play-button-overlay-high/B4DZlCXqu5JADg-/0/1757755147368?e=2147483647&amp;v=beta&amp;t=wbksM9kzG_2WM6p6-a7V4ZLfZmo4IjfAuZN5G0xCg8w">
+    <meta name="twitter:site" content="@linkedin">
+    <meta property="twitter:url" content="https://www.linkedin.com/posts/rabia-ali-218016287_html-css-javascript-activity-7372559461875363840-N9nE">
+<!---->      <meta name="clientSideIngraphs" content="1" data-gauge-metric-endpoint="/feedcontent-guest/api/ingraphs/gauge" data-counter-metric-endpoint="/feedcontent-guest/api/ingraphs/counter">
+  
+
+        <link rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/dini51druu3fhousp0svatwoa">
+
+        
+    
+      <script type="application/ld+json">
+        {"@context":"http://schema.org","@type":"VideoObject","@id":"https://www.linkedin.com/posts/rabia-ali-218016287_html-css-javascript-activity-7372559461875363840-N9nE","datePublished":"2025-09-13T09:19:11.218Z","headline":"🚀 Just launched a clean and functional Admin Dashboard built with pure HTML, CSS, and JavaScript!","comment":[{"@type":"Comment","datePublished":"2025-09-13T09:23:41.416Z","text":"Well deserved.\nBest wishes your way 🎉💐","creator":{"@type":"Person","name":"Rafia Akbar"},"interactionStatistic":{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":2}},{"@type":"Comment","datePublished":"2025-09-18T18:14:48.942Z","text":"Really clean work Rabia! Just curious have u consider adding backend or auth features to this? would be cool to see how you'd scale it into a full-stack setup. I'm actually in the middle of building smth similar a budget tracker app with server-side logic and auth. Still piecing it together, but it's been a fun challenge so far.","creator":{"@type":"Person","name":"Zaid Ansari"},"interactionStatistic":{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":0}},{"@type":"Comment","datePublished":"2025-09-17T04:49:28.508Z","text":"It is sad that using core concepts is now a flex. I'm an old programmer, core concepts were mostly all we had. The good news is, people like me have a head start on the competition.","creator":{"@type":"Person","name":"Jeffrey Madden"},"interactionStatistic":{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":0}},{"@type":"Comment","datePublished":"2025-09-19T11:50:51.055Z","text":"Your work is wonderful, but work on the layout again for mobile desktop size","creator":{"@type":"Person","name":"Ndubueze Emmanuel"},"interactionStatistic":{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":0}},{"@type":"Comment","datePublished":"2025-09-18T10:15:34.803Z","text":"Impressive work building a responsive, feature rich dashboard with pure HTML, CSS, and JS really highlights strong fundamentals. ","creator":{"@type":"Person","name":"Muhammad Bilal"},"interactionStatistic":{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":0}},{"@type":"Comment","datePublished":"2025-09-19T02:54:54.132Z","text":"It looks great and well structured","creator":{"@type":"Person","name":"Abdul-Muiz Olaleye"},"interactionStatistic":{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":0}},{"@type":"Comme

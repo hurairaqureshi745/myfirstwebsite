@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearnX – Enrollment Form</title>
+  <link rel="stylesheet" href="form.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════ ENROLLMENT SECTION ═══════════════ -->
+  <section class="enrollment-section" id="enrollment">
+
+    <!-- Background Image + Overlay -->
+    <div class="enroll-bg">
+      <img
+        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&auto=format&fit=crop"
+        alt="background"
+        class="enroll-bg-img"
+      />
+      <div class="enroll-overlay"></div>
+    </div>
+
+    <!-- Content Wrapper -->
+    <div class="enroll-wrapper">
+
+      <!-- Left Side — Info -->
+      <div class="enroll-info">
+
+        <div class="info-badge">
+          <span class="badge-dot"></span>
+          <span>Enroll Today — Limited Seats</span>
+        </div>
+
+        <h2 class="info-heading">
+          Start Your<br />
+          <span class="highlight">Learning Journey</span>
+        </h2>
+
+        <p class="info-sub">
+          Fill in the form and our team will contact you within
+          <strong>24 hours</strong> to confirm your enrollment.
+        </p>
+
+        <!-- Benefits list -->
+        <ul class="benefits-list">
+          <li>
+            <span class="benefit-icon">✅</span>
+            <span>Expert-led live & recorded courses</span>
+          </li>
+          <li>
+            <span class="benefit-icon">✅</span>
+            <span>Certificate on course completion</span>
+          </li>
+          <li>
+            <span class="benefit-icon">✅</span>
+            <span>Lifetime access to course material</span>
+          </li>
+          <li>
+            <span class="benefit-icon">✅</span>
+            <span>1-on-1 mentor support</span>
+          </li>
+          <li>
+            <span class="benefit-icon">✅</span>
+            <span>Job placement assistance</span>
+          </li>
+        </ul>
+
+        <!-- Stats -->
+        <div class="info-stats">
+          <div class="istat">
+            <span class="istat-num">50K+</span>
+            <span class="istat-lbl">Students</span>
+          </div>
+          <div class="istat-divider"></div>
+          <div class="istat">
+            <span class="istat-num">200+</span>
+            <span class="istat-lbl">Courses</span>
+          </div>
+          <div class="istat-divider"></div>
+          <div class="istat">
+            <span class="istat-num">98%</span>
+            <span class="istat-lbl">Success Rate</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Side — Form Card -->
+      <div class="enroll-card" id="enrollCard">
+
+        <div class="card-header">
+          <h3>Create Your Account</h3>
+          <p>Join 50,000+ students already learning</p>
+        </div>
+
+        <!-- Form -->
+        <form class="enroll-form" id="enrollForm" novalidate>
+
+          <!-- Row: First + Last Name -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" placeholder="Ali" />
+              <span class="error-msg" id="err-firstName">Please enter first name</span>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Hassan" />
+              <span class="error-msg" id="err-lastName">Please enter last name</span>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="ali@example.com" />
+            <span class="error-msg" id="err-email">Please enter a valid email</span>
+          </div>
+
+          <!-- Phone -->
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+92 300 0000000" />
+            <span class="error-msg" id="err-phone">Please enter phone number</span>
+          </div>
+
+          <!-- Course -->
+          <div class="form-group">
+            <label for="course">Select Course</label>
+            <select id="course">
+              <option value="">-- Choose a Course --</option>
+              <option value="frontend">Frontend Development</option>
+              <option value="backend">Backend Development</option>
+              <option value="fullstack">Full Stack Development</option>
+              <option value="uiux">UI/UX Design</option>
+              <option value="datascience">Data Science</option>
+              <option value="mobile">Mobile App Development</option>
+            </select>
+            <span class="error-msg" id="err-course">Please select a course</span>
+          </div>
+
+          <!-- Schedule -->
+          <div class="form-group">
+            <label for="schedule">Preferred Schedule</label>
+            <select id="schedule">
+              <option value="">-- Select Timing --</option>
+              <option value="morning">Morning (9am – 12pm)</option>
+              <option value="afternoon">Afternoon (1pm – 4pm)</option>
+              <option value="evening">Evening (6pm – 9pm)</option>
+              <option value="weekend">Weekends Only</option>
+            </select>
+            <span class="error-msg" id="err-schedule">Please select a schedule</span>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label for="message">Any Message <span class="optional">(Optional)</span></label>
+            <textarea id="message" rows="3" placeholder="Tell us about your goals..."></textarea>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span id="btnText">Enroll Now</span>
+            <span id="btnLoader" class="loader" style="display:none;"></span>
+          </button>
+
+        </form>
+
+        <!-- Success Message (hidden by default) -->
+        <div class="success-msg" id="successMsg">
+          <div class="success-icon">🎓</div>
+          <h3>Enrollment Submitted!</h3>
+          <p>Thank you! Our team will contact you within <strong>24 hours</strong>.</p>
+          <button class="btn-again" id="enrollAgain">Enroll Another Course</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="form.js"></script>
+</body>
+</html>

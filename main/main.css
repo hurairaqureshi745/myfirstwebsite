@@ -1,0 +1,37 @@
+@import "../Navbar/navbar.css";
+@import "../Hero/hero.css";
+@import "../home/home.css";
+@import "../Navbar/Form/form.css";
+@import "../footer/footer.css";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 68px;
+}
+
+body {
+  background: #f0f4ff;
+}
+
+.hero {
+  padding-top: 68px;
+}
+
+.btn-enroll,
+.card-btn,
+.cta-btn,
+.footer-logo,
+.logo {
+  text-decoration: none;
+}
+
+.benefit-icon {
+  color: #22c55e;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 68px;
+  }
+}

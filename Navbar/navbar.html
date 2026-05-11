@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearnX</title>
+  <link rel="stylesheet" href="navbar.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <img src="navbar icon.png" />
+      <span class="logo-text">LearnX</span>
+    </a>
+
+    <!-- Nav Links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"    class="nav-link active">Home</a></li>
+      <li><a href="#courses" class="nav-link">Courses</a></li>
+      <li><a href="#about"   class="nav-link">About</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <!-- Right Side -->
+    <div class="nav-right">
+      <a href="Form/form.html" class="btn-enroll" id="enrollBtn">Enroll Now</a>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home"    class="mob-link">Home</a>
+    <a href="#courses" class="mob-link">Courses</a>
+    <a href="#about"   class="mob-link">About</a>
+    <a href="#contact" class="mob-link">Contact</a>
+    <a href="enrollment.html" class="btn-enroll mob-enroll">Enroll Now</a>
+  </div>
+
+  <script src="navbar.js"></script>
+</body>
+</html>

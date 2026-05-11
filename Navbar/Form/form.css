@@ -1,0 +1,498 @@
+/* ═══════════════════════════════════════════════
+   enrollment.css  —  LearnX Enrollment Form
+   ═══════════════════════════════════════════════ */
+
+/* ── Variables ─────────────────────────────────── */
+:root {
+  --primary:      #1a73e8;
+  --primary-dark: #1558b0;
+  --navy:         #0d2b6e;
+  --white:        #ffffff;
+  --text-dark:    #1f2937;
+  --text-mid:     #4b5563;
+  --text-light:   #6b7280;
+  --border:       #e5e7eb;
+  --error:        #ef4444;
+  --success:      #22c55e;
+  --font:         'Poppins', sans-serif;
+  --radius:       12px;
+  --card-shadow:  0 24px 64px rgba(13, 43, 110, 0.18), 0 4px 16px rgba(0,0,0,0.08);
+}
+
+/* ── Reset ─────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  overflow-x: hidden;
+}
+
+/* ══════════════════════════════════════════════
+   ENROLLMENT SECTION
+══════════════════════════════════════════════ */
+.enrollment-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  overflow: hidden;
+}
+
+/* ── Background ──────────────────────────────── */
+.enroll-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.enroll-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.enroll-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    150deg,
+    rgba(13, 43, 110, 0.88) 0%,
+    rgba(10, 25, 60, 0.82) 50%,
+    rgba(13, 43, 110, 0.92) 100%
+  );
+}
+
+/* ── Wrapper ─────────────────────────────────── */
+.enroll-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1100px;
+  width: 100%;
+  animation: fadeUp 0.8s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ══════════════════════════════════════════════
+   LEFT INFO PANEL
+══════════════════════════════════════════════ */
+.enroll-info {
+  flex: 1;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+/* Badge */
+.info-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.12);
+  border: 1.5px solid rgba(255,255,255,0.25);
+  border-radius: 50px;
+  padding: 0.4rem 1.1rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #ffffff;
+  width: fit-content;
+  backdrop-filter: blur(6px);
+}
+
+.badge-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--success);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0.5); }
+  50%       { box-shadow: 0 0 0 7px rgba(34,197,94,0); }
+}
+
+/* Heading */
+.info-heading {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.3);
+}
+
+.highlight {
+  color: #60c2ff;
+  position: relative;
+  display: inline-block;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #60c2ff, #93c5fd);
+  border-radius: 4px;
+  opacity: 0.5;
+}
+
+/* Sub text */
+.info-sub {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.80);
+  line-height: 1.8;
+}
+
+.info-sub strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Benefits list */
+.benefits-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.88);
+  font-weight: 500;
+}
+
+.benefit-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+/* Stats */
+.info-stats {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 14px;
+  padding: 1rem 1.8rem;
+  backdrop-filter: blur(10px);
+  width: fit-content;
+  margin-top: 0.5rem;
+}
+
+.istat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.istat-num {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.istat-lbl {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.60);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.istat-divider {
+  width: 1px;
+  height: 36px;
+  background: rgba(255,255,255,0.20);
+}
+
+/* ══════════════════════════════════════════════
+   RIGHT FORM CARD
+══════════════════════════════════════════════ */
+.enroll-card {
+  flex: 1;
+  max-width: 480px;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 2.4rem 2.2rem;
+  box-shadow: var(--card-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+/* top blue accent bar */
+.enroll-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--navy), var(--primary), #60a5fa);
+}
+
+/* Card header */
+.card-header {
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+
+.card-header h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.25rem;
+}
+
+.card-header p {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+/* ── Form Layout ─────────────────────────────── */
+.enroll-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  position: relative;
+}
+
+.form-group label {
+  font-size: 0.80rem;
+  font-weight: 600;
+  color: var(--text-mid);
+  letter-spacing: 0.03em;
+}
+
+.optional {
+  font-weight: 400;
+  color: var(--text-light);
+  font-size: 0.75rem;
+}
+
+/* Inputs */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.62rem 0.9rem;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  font-family: var(--font);
+  font-size: 0.92rem;
+  color: var(--text-dark);
+  background: #fafafa;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--primary);
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(26,115,232,0.12);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #b0b8c4;
+}
+
+.form-group select option { color: var(--text-dark); }
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Error state */
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+  border-color: var(--error);
+  box-shadow: 0 0 0 3px rgba(239,68,68,0.10);
+}
+
+/* Error message */
+.error-msg {
+  display: none;
+  font-size: 0.75rem;
+  color: var(--error);
+  font-weight: 500;
+}
+
+.error-msg.show { display: block; }
+
+/* ── Submit Button ───────────────────────────── */
+.btn-submit {
+  width: 100%;
+  padding: 0.82rem;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius);
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 4px 16px rgba(26,115,232,0.30);
+  margin-top: 0.4rem;
+}
+
+.btn-submit:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(26,115,232,0.35);
+}
+
+.btn-submit:active { transform: translateY(0); }
+
+/* Loader spinner */
+.loader {
+  width: 18px;
+  height: 18px;
+  border: 2.5px solid rgba(255,255,255,0.35);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Success Message ─────────────────────────── */
+.success-msg {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.9rem;
+  padding: 2rem 1rem;
+  animation: fadeUp 0.5s ease both;
+}
+
+.success-msg.show {
+  display: flex;
+}
+
+.success-icon {
+  font-size: 3.5rem;
+  line-height: 1;
+  animation: bounceIn 0.6s ease both;
+}
+
+@keyframes bounceIn {
+  0%   { transform: scale(0); opacity: 0; }
+  60%  { transform: scale(1.15); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.success-msg h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.success-msg p {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+}
+
+.success-msg strong { color: var(--navy); }
+
+.btn-again {
+  margin-top: 0.5rem;
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  padding: 0.55rem 1.6rem;
+  font-family: var(--font);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-again:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* ── Responsive ──────────────────────────────── */
+@media (max-width: 900px) {
+  .enroll-wrapper {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: stretch;
+  }
+
+  .enroll-info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-badge { align-self: center; }
+
+  .benefits-list li { justify-content: center; }
+
+  .info-stats { align-self: center; }
+
+  .enroll-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .enroll-card {
+    padding: 2rem 1.4rem;
+  }
+}
